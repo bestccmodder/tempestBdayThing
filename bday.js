@@ -1,5 +1,5 @@
 let modStylesheet = document.createElement("link");
-modStylesheet.setAttribute("href", "modStyle.css");
+modStylesheet.setAttribute("href", "https://bestccmodder.github.io/tempestBdayThing/modStyle.css");
 modStylesheet.type = 'text/css';
 modStylesheet.rel = 'stylesheet';
 document.head.appendChild(modStylesheet);
@@ -9,7 +9,7 @@ fireworks.id = 'fireworks';
 fireworks.className = 'fireworks';
 document.getElementById('game').insertBefore(fireworks, sparkles);
 
-var img = 'img/cake.png';
+var img = 'https://bestccmodder.github.io/tempestBdayThing/cake.png';
 
 var PlaySound = function (url, vol, pitchVar) {
     let volume = 1;
@@ -68,7 +68,7 @@ Game.shootAt = function (x, y) {
         Game.fireworks.style.display = 'block';
     }
 }
-Game.fireworkColors = ['img/redSparkles.jpg', 'img/yellowSparkles.jpg', 'img/blueSparkles.jpg'];
+Game.fireworkColors = ['https://bestccmodder.github.io/tempestBdayThing/redSparkles.jpg', 'https://bestccmodder.github.io/tempestBdayThing/yellowSparkles.jpg', 'https://bestccmodder.github.io/tempestBdayThing/blueSparkles.jpg'];
 
 Game.plsWork = function () {
     if (Game.fireworksT > 0) {
@@ -79,11 +79,11 @@ Game.plsWork = function () {
 }
 Game.registerHook('logic', Game.plsWork);
 
-Game.Loader.Replace('perfectCookie.png', 'idk.png');
+Game.Loader.Replace('perfectCookie.png', 'https://bestccmodder.github.io/tempestBdayThing/idk.png');
 
 var css = document.createElement('style');
 css.type = 'text/css';
-css.innerHTML = '.product .icon,.product .icon.off,.tinyProductIcon{background-image:url("img/gus.png");}';
+css.innerHTML = '.product .icon,.product .icon.off,.tinyProductIcon{background-image:url("https://bestccmodder.github.io/tempestBdayThing/gus.png");}';
 document.head.appendChild(css);
 
 for (let i in Game.Objects) {
@@ -116,7 +116,7 @@ Game.Unlock('Birthday cake');
 
 LocalizeUpgradesAndAchievs();
 
-var audio = new Audio('');
+var audio = new Audio('https://bestccmodder.github.io/tempestBdayThing/song.mp3');
 audio.volume = Math.pow(1 * 75 / 100, 2);
 audio.onended = function () {
     for (let i = 0; i < 100; i++) {
