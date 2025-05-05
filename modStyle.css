@@ -1,0 +1,11 @@
+.fireworks {
+    width: 256px;
+    height: 256px;
+    background:url(img/redSparkles.jpg);
+    position: absolute;
+    z-index: 10000000000;
+    display: none;
+    left: 0px;
+    top: 0px;
+    mix-blend-mode: screen;
+}
